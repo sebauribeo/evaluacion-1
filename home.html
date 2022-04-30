@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Evaluacion 1</title>
+  </head>
+  <body>
+    <header class="nav">
+      <h1>
+        <span>M</span>
+        <span>i</span>
+        <span>s</span>
+        <span>i</span>
+        <span>t</span>
+        <span>i</span>
+        <span>o</span>
+        <span>w</span>
+        <span>e</span>
+        <span>b</span>
+      </h1>
+      <div class="toggle"></div>
+    </header>
+
+    <nav class="menu">
+      <span style="--i: 0"></span>
+      <span style="--i: 1"></span>
+      <span style="--i: 2"></span>
+      <span style="--i: 3"></span>
+      <ul>
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>Registro</h1>
+      <form class="formulario" action="">
+        <input type="text" placeholder="Ingresa tu nombre " />
+        <input type="email" placeholder="Ingresa tu mail" />
+        <textarea cols="30" rows="5" placeholder="Mensaje"></textarea>
+        <input class="boton" type="button" value="Enviar" />
+      </form>
+    </main>
+
+    <script>
+      const navigationOpen = document.querySelector(".menu");
+      document.querySelector(".toggle").onclick = function () {
+        this.classList.toggle("active");
+        navigationOpen.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
